@@ -1,6 +1,7 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Sample route to test
 @app.route('/', methods=['GET'])
